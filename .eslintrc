@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "prettier"
+  ],
+  "rules": {
+    //    "prettier/prettier": "error",
+    //    "no-unused-vars": "warn",
+    //    "no-console": "off",
+    //    "func-names": "off",
+    //    "no-process-exit": "off",
+    //    "object-shorthand": "off",
+    //    "class-methods-use-this": "off",
+    "react/jsx-props-no-spreading": 0,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "jsx-quotes": [
+      1,
+      "prefer-double"
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "plugins": [
+    "prettier"
+  ]
+}

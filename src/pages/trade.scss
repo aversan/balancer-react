@@ -1,0 +1,10 @@
+.trade-container {
+  @apply max-w-full mx-auto mt-2 xs:mt-8;
+  max-width: 450px;
+}
+
+@media (min-height: 840px) {
+  .trade-container {
+    @apply md:mt-8;
+  }
+}

@@ -1,0 +1,57 @@
+.bal-loading-block {
+  min-height: 5px;
+}
+
+@keyframes shimmerBackground {
+  0% {
+    background-position: -5000px 0;
+  }
+  100% {
+    background-position: 5000px 0;
+  }
+}
+
+.shimmer {
+  --startColor: theme('colors.gray.50');
+  --midColor: theme('colors.gray.100');
+  --endColor: theme('colors.gray.50');
+
+  animation: shimmerBackground 10s infinite;
+  background: linear-gradient(
+      to right,
+      var(--startColor) 4%,
+      var(--midColor) 25%,
+      var(--endColor) 36%
+  );
+  background-size: 1000px 100%;
+}
+
+.shimmer-white {
+  --startColor: rgba(255, 255, 255, 0.1);
+  --midColor: rgba(255, 255, 255, 0.2);
+  --endColor: rgba(255, 255, 255, 0.1);
+
+  animation: shimmerBackground 10s infinite;
+  background: linear-gradient(
+      to right,
+      var(--startColor) 4%,
+      var(--midColor) 25%,
+      var(--endColor) 36%
+  );
+  background-size: 1000px 100%;
+}
+
+.shimmer-dark {
+  --startColor: theme('colors.gray.850');
+  --midColor: theme('colors.gray.800');
+  --endColor: theme('colors.gray.850');
+
+  animation: shimmerBackground 10s infinite;
+  background: linear-gradient(
+      to right,
+      var(--startColor) 4%,
+      var(--midColor) 25%,
+      var(--endColor) 36%
+  );
+  background-size: 1000px 100%;
+}
